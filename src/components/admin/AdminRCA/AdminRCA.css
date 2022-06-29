@@ -1,0 +1,701 @@
+* {
+    box-sizing: border-box;
+  }
+  .adminRCAcontainer {
+    padding: 1.33vh 0.66vw !important;
+   display: inline-block;
+    margin-left: 2.6vw;
+    margin-right: 3.255vw;
+    width: 90%;
+    height: fit-content;
+  }
+  .adminRCAcontainerhr {
+    width: 77%;
+    margin-left: 1.27vw;
+    background-color: #f2f3f2;
+    border: 0.134vh solid #f2f3f2;
+    margin-top: 1.34vh;
+  }
+  .adminRCApaper {
+    border-style: solid;
+    border-radius: 1.8vw;
+    border-color: #f2f3f2;
+    padding: 4vh 1.8vw !important;
+    margin-top: 5.36vh;
+    min-width: 71.61vw;
+    width: auto;
+    
+  }-text
+
+  .adminRCAtitle{
+    font-weight: 500;
+    font-size: 2.8vw;
+  }
+
+  .adminRCAnames {
+    color: #fa5e00;
+    font-size: 1.41vw;
+    display: inline-block;
+    
+    
+  }
+  
+  .adminRCAnew {
+    color: #fa5e00;
+    font-size: 1.33vw;
+    display: inline-block;
+    
+    margin-left:50%;
+  }
+  .adminRCAfirstrow {
+   
+    
+    margin-bottom: 2%;
+  }
+  .adminRCAhrFirst {
+    background-color: #f2f3f2;
+    border: 0.09vw solid #f2f3f2;
+    position: relative;
+    width: 60%;
+    margin-top: 0.4vh;
+  }
+
+  .progressbtn{
+      background-color:black;
+      color: aliceblue;
+      width: 13%;
+      height: 6.71vh;
+      font-weight: 300;
+      border-radius: 2.11vw;
+      border: none;
+      font-size: 0.95vw;
+  }
+
+  
+  .approvebtn{
+    background-color:black;
+    color: aliceblue;
+    width: 13%;
+    height: 6.71vh;
+    font-weight: 300;
+    border-radius: 2.11vw;
+    border: none;
+    margin-left: 1vw;
+    font-size: 0.95vw;
+}
+
+  
+
+.rejectbtn{
+    background-color: #f9f9f9;
+    color: #000;
+    border: solid 1px #8d8c8c;
+    width: 13%;
+    height: 6.71vh;
+    font-weight: 300;
+    border-radius: 2.11vw;
+    margin-left: 1vw;
+    font-size: 0.95vw;
+}
+
+.rejectbtn:hover{
+  background-color:black;
+  color: aliceblue;
+  width: 13%;
+  height: 6.71vh;
+  font-weight: 300;
+  border-radius: 2.11vw;
+  border: none;
+  margin-left: 1vw;
+}
+
+.Inactivebtn{
+   background-color: #f9f9f9;
+   border: solid 1px #8d8c8c;
+    width: 13%;
+    height: 6.71vh;
+    font-weight: 300;
+    border-radius: 2.11vw;
+    margin-left: 1vw;
+    color: #000;
+    font-size: 0.95vw;
+}
+
+.Inactivebtn:hover{
+  background-color:black;
+  color: aliceblue;
+  width: 13%;
+  height: 6.71vh;
+  font-weight: 300;
+  border-radius: 2.11vw;
+  border: none;
+  margin-left: 1vw;
+}
+
+
+.accordion {
+   
+    width: 27.34vw;
+    
+    margin: auto;
+    margin-top: 6.71vh;
+ }
+ 
+ .accordiantitle {
+   height: 8.05vh;
+   width:100%;
+   border-bottom: 0.4vh solid #f2f3f2;
+   letter-spacing: 0.06vw;
+   text-align: left;
+   line-height: 2;
+   font-weight: lighter;
+   position: relative;
+   padding: 1.34vh 0.66vw;
+   z-index: 20;
+   border-radius: 0.26vw;
+   margin-top: 2.8vh;
+   font-size: 1.62vw;
+   /* transition: all .2s ease-in; */
+ }
+ 
+ .title-text {
+  margin-left: 0.66vw;
+  font-size: 1.5vw;
+ }
+ 
+ .title:hover {
+   cursor: pointer;
+  
+ }
+ 
+ .title:active {
+   background-color: rgba(0, 0, 0, .55);
+ }
+ 
+ .content {
+   height: 4vh;
+   width: 100%;
+   background-color: transparent;
+   border-radius: 0.26vw;
+   color: black;
+   font-size: 0.9vw;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+   margin-top: -4h;
+   text-align: left;
+   /* transition: all 200ms cubic-bezier(0.600, -0.280, 0.735, 0.045); */
+  /*  transition: all 100ms ease-in; */
+ }
+ 
+ .content-open {
+   margin-top: 0px;
+   height: auto;
+   color:black;
+   /* transition: all 350ms cubic-bezier(0.080, 1.090, 0.320, 1.275); */
+ }
+ 
+ .content-text {
+   padding: 2vh 1vw;
+   visibility: hidden;
+   opacity: 0;
+   overflow: auto;
+   /* transition: all .2s ease-in; */
+ }
+ 
+ .content-text-open {
+   visibility: visible;
+   opacity: 1;
+   
+   /* transition: all .8s ease-in; */
+ }
+ 
+ .fa-angle-down {
+   font-size: 1.3vw;
+   color: #000;
+   transition: all .6s cubic-bezier(0.080, 1.090, 0.320, 1.275);
+ }
+ 
+ .fa-rotate-180 {
+   color: rgb(161, 18, 18);
+   transform: rotate(180deg);
+ }
+ 
+ .arrow-wrapper {
+     float: right;
+   /* position: absolute;
+   margin-left: 500px; */
+ }
+ 
+ .admininputfields {
+    width: 26vw;
+    height: 6.5vh;
+    margin: 2vh 0px 0px 0.66vw;
+    padding-left: 0.66vw;
+    padding-top: 0.3vh;
+    font-size: 1vw;
+    border-radius: 0.66vw;
+    border: solid 0.134vh #cdcdcd;
+    background-color: #fff;
+  }
+
+ .admininput1-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+      bottom:0.26vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput1:focus ~ .admininput1-label, .admininput1:valid ~ .admininput1-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+  
+  .admininput21-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+      bottom:0.26vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput21:focus ~ .admininput21-label, .admininput21:valid ~ .admininput21-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+  
+  .admininput3-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+      bottom:0.26vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput3:focus ~ .admininput3-label, .admininput3:valid ~ .admininput3-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+  
+  .admininput4-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+    bottom: 0px;
+    
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+
+  
+  /* .input4:focus ~ .dummyNum, .input4:valid ~ .dummyNum{
+    color:#3b3b3b;
+    font-size: 13px;
+    position: relative;
+    right: 530px;
+    display: inline-block;
+    width: fit-content;
+  } */
+  
+  .admininput4:focus ~ .admininput4-label, .admininput4:valid ~ .admininput4-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+    
+  }
+  .admininput4 {
+     margin-left: 0.66vw;
+  }
+
+  .admininput5-label{
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+   left: 2.6vw;
+   bottom: 12.75vh;
+   font-weight: 600;
+   letter-spacing: 0.03vw;
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput5:focus ~ .admininput5-label, .admininput5:valid ~ .admininput5-label{
+    bottom: 16.1vh;
+    right: 21.48vw;;
+    position: absolute;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+    width: 10vw;
+  }
+
+  .admininput6-label{
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 36.45vw;
+    bottom: 12.75vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput6:focus ~ .admininput6-label, .admininput6:valid ~ .admininput6-label{
+    left: 36.45vw;
+    bottom: 16.1vh;
+    position: absolute;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+  .input7-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+      bottom:0.26vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput7:focus ~ .admininput7-label, .admininput7:valid ~ .admininput7-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+  .admininput7:focus ~ .admincommondropdown{
+    transform: rotate(0deg);
+  }
+
+  .admininput8-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+      bottom:0.26vh;
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput8:focus ~ .admininput8-label, .admininput8:valid ~ .admininput8-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+ /* admin */
+
+  .admininput9-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+    
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput9:focus ~ .admininput9-label, .admininput9:valid ~ .admininput9-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+  .admininput10-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+  
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput10:focus ~ .adminadmininput10-label, .admininput10:valid ~ .admininput10-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+  .admininput11-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput11:focus ~ .admininput11-label, .admininput11:valid ~ .admininput11-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+  .admininput12-label{
+    color: #999;
+    position: relative;
+    pointer-events: none;
+    right: 25vw;
+  
+   
+    transition: 0.2s;
+    font-size: 0.78vw;
+  }
+  
+  .admininput12:focus ~ .admininput12-label, .admininput12:valid ~ .admininput12-label{
+    bottom: 3.35vh;
+    right: 25vw;
+    position: relative;
+    font-size: 0.7vw;
+    color: #525252;
+    background-color:#fff;
+    padding:0 0.33vw 0 0.33vw;
+  }
+
+
+  ::placeholder{
+    color: #999;
+  }
+
+  .adminoptioncolor{
+    color: #999;
+  }
+
+  .adminoption{
+    height: 2.8vh;
+    margin: 1.34vh 0.66vw;
+    font-size: large;
+    
+  }
+
+  .businesstypecolor{
+    color: #999999;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  .adminrca2subtitle3{
+    font-weight: 300;
+    font-size: 1vw;
+    width:fit-content;
+    display: inline-block;
+    margin-right: 0.66vw;
+    margin-left: 2%;
+  }
+
+  .adminDocumentBtn{
+    width: 20%;
+    height: 6.71vh;
+    background-color: #000;
+    color: white;
+    font-weight: 300;
+    border: none;
+    border-radius: 2.11vw;
+    letter-spacing: 0.03px;
+    font-size: 0.95vw;
+  }
+
+  .adminclhr2{
+    width: 18%;
+    background-color: #f2f3f2;
+    border: 0.134vh solid #f2f3f2 ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.adminname1{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #fa5e00;
+}
+
+.adminfile{
+    
+  width:25%;
+  margin-top: 0.7vh;
+  margin-bottom: 1.34vh;
+  text-align: center;
+  background-color: #f6f6f6;
+  height:6.71vh;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminfileName{
+  font-weight: 300;
+
+  align-items: center;
+  position: relative;
+  left: 0.66vw;
+  bottom: 0.67vh;
+  
+}
+
+.adminsavebtn{
+   margin-top: 30px;
+  width: 10%;
+  height: 5.36vh;
+  background-color: #000;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 2.11vw;
+  letter-spacing: 0.03px;
+  font-size: 0.9vw;
+}
+
+/* dropdown design */
+
+ 
+.admindropdown {
+  width: 400px;
+  height: 45px;
+  margin: 13px 0px 0px 10px;
+  padding-left: 11px;
+  padding-top: 2px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: solid 1px #cdcdcd;
+  background-color: #fff;
+  color: #505050;
+}
+
+.admindropdown-header {
+padding-top: 12px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.admindropdown-body {
+padding: 5px;
+border-top: 1px solid #E5E8EC;
+display: none;
+z-index: 10000;
+}
+
+.admindropdown-body.adminopen {
+display: block;
+position: absolute;
+background-color: white;
+z-index: 10000;
+width: 400px;
+left:25px;
+top:136px;
+border-radius: 10px;
+border: solid 1px #cdcdcd;
+}
+
+.admindropdown-item {
+padding: 10px;
+z-index: 10000;
+}
+
+.admindropdown-item:hover {
+cursor: pointer;
+background-color: #f2f2f2;
+z-index: 10000;
+}
+
+.admindropdown-item-dot {
+opacity: 0;
+color: #91A5BE;
+transition: all .2s ease-in-out;
+}
+
+.admindropdown-item-dot.selected {
+opacity: 1;
+}
+
+.adminicon {
+font-size: 13px;
+color: #91A5BE;
+transform: rotate(270deg);
+transition: all .2s ease-in-out;
+}
+
+.adminicon.open {
+transform: rotate(90deg);
+}
+
+.admincommondropdown{
+  position: relative;
+  right: 28px;
+  width: 15px;
+  height: 9px;
+  transform: rotate(180deg);
+ transition: all 100ms ease-in-out;
+}
+
+
